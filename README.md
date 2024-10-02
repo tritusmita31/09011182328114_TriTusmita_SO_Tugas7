@@ -38,13 +38,34 @@ Output harus berisi baris Aktif: aktif (berjalan), yang menunjukkan bahwa layana
 
 ![ssh10](https://github.com/user-attachments/assets/d6735022-b416-403a-94b0-df2e70037727)
 
-# 4. Connect to the server 
+# 5. Connect to the server 
 
 ![ssh11](https://github.com/user-attachments/assets/2f3a9f0c-6b76-4bf4-9267-7fa56a8168c8)
 ![ssh12](https://github.com/user-attachments/assets/ecae5bed-ab7a-4f02-82a7-8ac7820c50c4)
+
+# 6. Configure SSH
+
+Setelah menyelesaikan lima langkah sebelumnya, Anda sudah dapat terhubung ke server dari jarak jauh. Namun, Anda dapat lebih meningkatkan keamanan koneksi dengan mengubah port koneksi default ke port lain atau mengubah otentikasi kata sandi menjadi otentikasi kunci. Perubahan ini dan lainnya memerlukan pengeditan file konfigurasi SSH.
+
+Pengaturan server OpenSSH utama disimpan di file konfigurasi utama sshd_config (lokasi: /etc/ssh). Sebelum mulai mengedit, Anda harus membuat cadangan file ini: 
+
 ![ssh13](https://github.com/user-attachments/assets/6fb562bd-52b5-4ac7-9fdc-f141df5a0751)
-![ssh14](https://github.com/user-attachments/assets/49eafa70-5f71-45a3-ba72-5b1122201d0b)
-![ssh15](https://github.com/user-attachments/assets/7e1e2b81-7405-4a40-ac78-eb78609e24e0)
-![ssh16](https://github.com/user-attachments/assets/bfa8fa78-006e-4a88-83ea-829c259733a7)
-![ssh17](https://github.com/user-attachments/assets/4c99e2c6-c822-451c-aa1b-582344d1eb66)
+
+Setelah membuat cadangan, dapat melanjutkan untuk mengedit file konfigurasi. Untuk melakukan ini, buka menggunakan editor nano:
+
 ![ssh18](https://github.com/user-attachments/assets/466eb9af-fa43-48b9-bace-ac0c8d9f3236)
+
+Dalam file, ubah port menjadi yang lebih aman. Yang terbaik adalah mengatur nilai dari rentang dinamis port (49152 - 65535) dan menggunakan nomor yang berbeda untuk keamanan tambahan. Misalnya, mari kita ubah nilai port menjadi 49532. Untuk melakukan ini, kami menghapus komentar baris yang sesuai dalam file dan mengubah port seperti yang ditunjukkan pada tangkapan layar di bawah ini.
+
+![ssh14](https://github.com/user-attachments/assets/49eafa70-5f71-45a3-ba72-5b1122201d0b)
+
+Selain pengaturan ini, sebaiknya ubah mode autentikasi kata sandi ke mode autentikasi kunci yang lebih aman. Untuk melakukan ini, hapus komentar baris yang sesuai dan pastikan nilainya adalah "Ya", seperti yang ditunjukkan pada tangkapan layar.
+
+![ssh16](https://github.com/user-attachments/assets/bfa8fa78-006e-4a88-83ea-829c259733a7)
+
+Sekarang, mari kita larang masuk ke server sebagai superuser dengan mengubah baris yang sesuai seperti yang ditunjukkan pada gambar di bawah ini.
+
+![ssh15](https://github.com/user-attachments/assets/7e1e2b81-7405-4a40-ac78-eb78609e24e0)
+
+![ssh17](https://github.com/user-attachments/assets/4c99e2c6-c822-451c-aa1b-582344d1eb66)
+
