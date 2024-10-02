@@ -43,6 +43,8 @@ Output harus berisi baris Aktif: aktif (berjalan), yang menunjukkan bahwa layana
 ![ssh11](https://github.com/user-attachments/assets/2f3a9f0c-6b76-4bf4-9267-7fa56a8168c8)
 ![ssh12](https://github.com/user-attachments/assets/ecae5bed-ab7a-4f02-82a7-8ac7820c50c4)
 
+masuk ke server teman.
+
 # 6. Configure SSH
 
 Setelah menyelesaikan lima langkah sebelumnya, Anda sudah dapat terhubung ke server dari jarak jauh. Namun, Anda dapat lebih meningkatkan keamanan koneksi dengan mengubah port koneksi default ke port lain atau mengubah otentikasi kata sandi menjadi otentikasi kunci. Perubahan ini dan lainnya memerlukan pengeditan file konfigurasi SSH.
