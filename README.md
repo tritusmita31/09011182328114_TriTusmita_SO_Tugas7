@@ -71,3 +71,21 @@ Sekarang, mari kita larang masuk ke server sebagai superuser dengan mengubah bar
 
 ![ssh17](https://github.com/user-attachments/assets/4c99e2c6-c822-451c-aa1b-582344d1eb66)
 
+
+# Menginstall Putty
+
+1. Update repository terlebih dahulu
+   
+![putty1](https://github.com/user-attachments/assets/cf7dd349-7f8d-4218-9857-ae760a21a39b)
+
+2. Install Putty
+   
+![putty2](https://github.com/user-attachments/assets/d7444d7f-0769-4c3e-bb2d-22bebaf32e2d)
+
+3. Menampilkan versi Putty
+   
+![putty3](https://github.com/user-attachments/assets/0ce08a05-62b9-4c72-8c3f-4c702cab1b28)
+
+4. Tampilan saat putty dibuka
+   
+![putty4](https://github.com/user-attachments/assets/75214608-0b88-4689-b486-28a5a6120364)
