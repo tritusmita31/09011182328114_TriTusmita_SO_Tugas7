@@ -69,7 +69,7 @@ Sekarang, mari kita larang masuk ke server sebagai superuser dengan mengubah bar
 
 ![ssh15](https://github.com/user-attachments/assets/7e1e2b81-7405-4a40-ac78-eb78609e24e0)
 
-![ssh17](https://github.com/user-attachments/assets/4c99e2c6-c822-451c-aa1b-582344d1eb66)
+
 
 
 # Menginstall Putty
